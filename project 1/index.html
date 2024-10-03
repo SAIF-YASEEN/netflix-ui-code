@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Netflix - Watch Tv Shows Online</title>
+    <link rel="icon" href="images/logotop.png" width="2px" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Monoton&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="Icons by https://unicornicons.com" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="divone">
+      <div class="mainheader">
+        <img src="images/netfilx logo.jpg" alt="" class="netflixlogo" />
+        <button class="signbtn"><a href="login.html">Sign In</a></button>
+      </div>
+
+      <img src="images/netfilx bck.jpg" alt="" class="bckimage" />
+
+      <div class="middletext">
+        <p class="middlep">Unlimited movies,</p>
+        <p class="middlepp">Tv shows, and more</p>
+        <p class="middleppp">Start at rs 250. Cancel anytime</p>
+        <p class="middlepppp">
+          Ready to watch? Entery your email to create or resart your membership
+        </p>
+        <div>
+          <p class="emailp">Email address</p>
+          <input type="email" />
+          <button class="middlebtn">
+            <a href="#">get started</a>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="divtwo">
+      <p class="divtwop">trending now</p>
+      <div class="dropdown">
+        <button class="dropbtn" onclick="toggleDropdown()">country</button>
+        <div class="dropdown-content" id="myDropdown">
+          <a href="#">Global</a>
+          <a href="#">pakistani</a>
+          <a href="#">American</a>
+        </div>
+      </div>
+
+      <div class="menu-container">
+        <button class="menu-button" onclick="toggleMenu()">filter</button>
+        <div class="menu-content" id="dropdownMenu">
+          <a href="#" class="menu-item">Latest</a>
+          <a href="#" class="menu-item">Popular</a>
+          <a href="#" class="menu-item">Oldest</a>
+        </div>
+      </div>
+
+      <div
+        id="carouselExampleInterval"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner" id="carouselone">
+          <div
+            class="carousel-item active"
+            data-bs-interval="10000"
+            id="carousel1"
+          >
+            <div class="carouseldiv">
+              <img src="images/1.webp" alt="" class="imagesall" />
+              <img src="images/2.webp" alt="" class="imagesall" />
+              <img src="images/3.webp" alt="" class="imagesall" />
+              <img src="images/4.webp" alt="" class="imagesall" />
+              <img src="images/10.webp" alt="" class="imagesall" />
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000" id="carousel2">
+            <div class="carouseldiv2">
+              <img src="images/6.webp" alt="" class="imagesall" />
+              <img src="images/8.webp" alt="" class="imagesall" />
+              <img src="images/9.webp" alt="" class="imagesall" />
+              <img src="images/7.webp" alt="" class="imagesall" />
+              <img src="images/5.webp" alt="" class="imagesall" />
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleInterval"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleInterval"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <p class="morep">More Reasons to Join</p>
+      <div class="morereasons">
+        <div class="card" style="width: 20rem">
+          <div class="card-body">
+            <h5 class="card-title">Enjoy on your TV</h5>
+
+            <p class="card-text">
+              Watch on Smart TVs,Playstation,Xbox,chromecast,Apple TV,Blu-ray
+              player,and more
+            </p>
+            <img src="images/monitor-icon.png" class="monitor-png" alt="" />
+          </div>
+        </div>
+        <div class="card" style="width: 20rem">
+          <div class="card-body">
+            <h5 class="card-title">Download your shows to watch offline</h5>
+
+            <p class="card-text">
+              Save your favorites easily and always have something to watch
+            </p>
+            <img src="images/download-icon.png" class="download-png" alt="" />
+          </div>
+        </div>
+        <div class="card" style="width: 20rem">
+          <div class="card-body">
+            <h5 class="card-title">Watch everywhere</h5>
+
+            <p class="card-text">
+              Stream unlimited movies and TV shows on your phone, tablet,
+              laptop, and TV
+            </p>
+            <img src="images/watch-icon.png" class="watch-png" alt="" />
+          </div>
+        </div>
+        <div class="card" style="width: 20rem">
+          <div class="card-body">
+            <h5 class="card-title">Create profile for every kids</h5>
+
+            <p class="card-text">
+              Send kids on adventures with their favorite characters in a space
+              made just for them — free with your membership
+            </p>
+            <img src="images/profile-icon.png" class="profile-png" alt="" />
+          </div>
+        </div>
+      </div>
+      <p class="faqwala">Frequently Asked Question</p>
+      <div class="faq">
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne"
+                aria-expanded="false"
+                aria-controls="flush-collapseOne"
+              >
+                what is netfilx?
+                <img src="images/add-icon.png" class="add-iconone" alt="" />
+              </button>
+            </h2>
+            <div
+              id="flush-collapseOne"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                Netflix is a streaming service that offers a wide variety of
+                award-winning TV shows, movies, anime, documentaries, and more
+                on thousands of internet-connected devices. <br /><br />You can
+                watch as much as you want, whenever you want without a single
+                commercial – all for one low monthly price. There's always
+                something new to discover and new TV shows and movies are added
+                every week!.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo"
+                aria-expanded="false"
+                aria-controls="flush-collapseTwo"
+              >
+                How much did netflix cost?
+                <img src="images/add-icon.png" class="add-icontwo" alt="" />
+              </button>
+            </h2>
+            <div
+              id="flush-collapseTwo"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                Watch Netflix on your smartphone, tablet, Smart TV, laptop, or
+                streaming device, all for one fixed monthly fee. Plans range
+                from Rs 250 to Rs 1,100 a month. No extra costs, no contracts.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree"
+                aria-expanded="false"
+                aria-controls="flush-collapseThree"
+              >
+                Where can i watch?
+                <img src="images/add-icon.png" class="add-iconthree" alt="" />
+              </button>
+            </h2>
+            <div
+              id="flush-collapseThree"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                Watch anywhere, anytime. Sign in with your Netflix account to
+                watch instantly on the web at netflix.com from your personal
+                computer or on any internet-connected device that offers the
+                Netflix app, including smart TVs, smartphones, tablets,
+                streaming media players and game consoles.
+                <br /><br />
+
+                You can also download your favorite shows with the iOS or
+                Android app. Use downloads to watch while you're on the go and
+                without an internet connection. Take Netflix with you anywhere.
+              </div>
+            </div>
+          </div>
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  how do i cancel?
+                  <img src="images/add-icon.png" class="add-iconfour" alt="" />
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse show"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  Netflix is flexible. There are no pesky contracts and no
+                  commitments. You can easily cancel your account online in two
+                  clicks. There are no cancellation fees – start or stop your
+                  account anytime.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  What can i watch on Netflix?
+                  <img src="images/add-icon.png" class="add-iconfive" alt="" />
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  Netflix has an extensive library of feature films,
+                  documentaries, TV shows, anime, award-winning Netflix
+                  originals, and more. Watch as much as you want, anytime you
+                  want
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  Is netfilx good for Kids?
+                  <img src="images/add-icon.png" class="add-iconsix" alt="" />
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  The Netflix Kids experience is included in your membership to
+                  give parents control while kids enjoy family-friendly TV shows
+                  and movies in their own space. Kids profiles come with
+                  PIN-protected parental controls that let you restrict the
+                  maturity rating of content kids can watch and block specific
+                  titles you don’t want kids to see
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="bg-body-tertiary text-center" id="footerone">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+          <!-- Section: Social media -->
+          <section class="mb-4">
+            <!-- Facebook -->
+            <a
+              data-mdb-ripple-init
+              class="btn text-white btn-floating m-1" id="links"
+              style="background-color: rgb(248, 249, 250)"
+              href="#!"
+              role="button"
+              >
+              <img src="images/github.svg" alt=""></a>
+            <!-- Twitter -->
+            <a
+              data-mdb-ripple-init
+              class="btn text-white btn-floating m-1"id="links"
+              style="background-color: rgb(248, 249, 250)"
+              href="#!"
+              role="button"
+              ><img src="images/youtube.svg" alt=""></a>
+
+            <!-- Google -->
+            <a
+              data-mdb-ripple-init
+              class="btn text-white btn-floating m-1"id="links"
+              style="background-color: rgb(248, 249, 250)"
+              href="#!"
+              role="button"
+              ><img src="images/twitter.svg" alt=""></a>
+
+            <!-- Instagram -->
+            <a
+              data-mdb-ripple-init
+              class="btn text-white btn-floating m-1"id="links"
+              style="background-color: rgb(248, 249, 250)"
+              href="#!"
+              role="button"
+              ><img src="images/linkedin.svg" alt=""></a>
+
+            <!-- Linkedin -->
+            <a
+              data-mdb-ripple-init
+              class="btn text-white btn-floating m-1"id="links"
+              style="background-color: rgb(248, 249, 250)"
+              href="#!"
+              role="button"
+              ><img src="images/google.svg" alt=""></a>
+            <!-- Github -->
+            <a
+              data-mdb-ripple-init
+              class="btn text-white btn-floating m-1"id="links"
+              style="background-color:rgb(248, 249, 250)"
+              href="#!"
+              role="button"
+              ><img src="images/instagram.svg" alt=""></a>
+          </section>
+          <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+
+        
+      </footer>
+      <!-- Footer -->
+      <footer class="text-center text-lg-start bg-body-tertiary text-muted" id="footerlast">
+        <!-- Section: Social media -->
+        <section
+          class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+        >
+          <!-- Left -->
+          <div class="me-5 d-none d-lg-block">
+            <span>Get connected with us on social networks:</span>
+          </div>
+          <!-- Left -->
+
+          <!-- Right -->
+          <div>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-google"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+          <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Links  -->
+        <section class="">
+          <div class="container text-center text-md-start mt-5">
+            <!-- Grid row -->
+            <div class="row mt-3">
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <!-- Content -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  <i class="fas fa-gem me-3"></i>NETFILX
+                </h6>
+                <p>
+                here you can watch movies anywhere anytime in high quality, latest and all type of movies for free.
+                </p>
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">Products</h6>
+                <p>
+                  <a href="#!" class="text-reset">Movies</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Tv shows</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Dramas</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">live news</a>
+                </p>
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">Useful links</h6>
+                <p>
+                  <a href="#!" class="text-reset">Pricing</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Settings</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Orders</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Help</a>
+                </p>
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                <p><i class="fas fa-home me-3"></i> pakistan.karachi</p>
+                <p>
+                  <i class="fas fa-envelope me-3"></i>
+               saifurrehman0708@gmail.com
+                </p>
+                <p><i class="fas fa-phone me-3"></i> 03333549366</p>
+                <p><i class="fas fa-print me-3"></i> 03332661276</p>
+              </div>
+              <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+          </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div
+          class="text-center p-4"
+          style="background-color: rgba(0, 0, 0, 0.05)"
+        >
+          © 2021 Copyright:
+          <a class="text-reset fw-bold" href="#"
+            >------------</a
+          >
+        </div>
+        <!-- Copyright -->
+      </footer>
+      <!-- Footer -->
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

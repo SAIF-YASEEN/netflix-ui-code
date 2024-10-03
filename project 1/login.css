@@ -1,0 +1,128 @@
+*{
+    font-family: sans-serif;
+}.firstdiv {
+  width: 500px;
+  margin-left: 700px;
+  height: 700px;
+  border: 2px solid white;
+  border-radius: 10px;
+  text-transform: capitalize;
+  overflow: hidden;
+  margin-top: 100px;
+  color: white;
+}
+body {
+
+  background-image: url(images/netfilx\ bck.jpg);
+  background-size: cover;
+
+
+  
+}
+.input {
+  width: 100%;
+padding-left: 100px;
+margin-top: 100px;
+  height: 40%;
+
+}
+input {
+  width: 60%;
+  margin-bottom: 0px;
+  height: 30px;
+  border-radius: 10px;
+}
+.names{
+    font-size: 20px;
+}
+button {
+  width: 100%;
+  height: 60px;
+background-color: rgb(58, 58, 243);
+border: 1px solid black;
+color: white;
+font-size: 20px;
+font-family: Arial, Helvetica, sans-serif;
+border: 15px;
+
+}
+.gender {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 60px;
+  margin-top: 30px;
+  margin-left:20px;
+  font-weight: bolder; 
+
+}
+input[type="radio"] {
+  width: 100px;
+  margin-top: 10px;
+}
+
+h1{
+    margin-left: 100px;
+}
+.privacy{
+  width: 100%;
+  height: 120px;
+}
+
+input[type="text"]:focus{
+
+  border: 4px solid rgb(234, 50, 242);
+}
+input[type="email"]:focus{
+  border: 4px solid rgb(41, 215, 224);
+  }
+  input[type="password"]:focus{
+    border: 4px solid rgb(37, 13, 78);
+    }
+
+input[type="text"],[type="email"],[type="password"]{
+  outline: none;
+  border: none;
+}
+
+.f{
+  width: 100%;
+  height: 60px;
+  font-weight: bolder; 
+}
+.ff{
+  width: 100%;
+  height: 60px;
+font-weight: bolder; 
+}
+.pr{
+  position: absolute;
+  left: 780px;
+  top: 645px;
+}
+input[type="checkbox"]{
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+  margin-top: 20px;
+
+}
+/* .checkboxx{
+  position: absolute;
+  left: 710px;
+  width: 50px;
+  height: 50px;
+   top: 650px;
+}
+.checkboxxx{
+  position: absolute;
+  left: 160px;
+  top: 710px;
+  width: 50px;
+  height: 50px;
+} */
+.pf{
+  position: absolute;
+  left: 780px;
+  top: 705px;
+}
